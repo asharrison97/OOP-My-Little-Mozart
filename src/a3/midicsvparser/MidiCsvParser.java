@@ -6,8 +6,10 @@ import a3.midieventdata.*;
 
 
 public class MidiCsvParser {
-	public static List<MidiEventData> parseCsv(File f) {
+	public static List<MidiEventData> parseCsv(String f) {
 		List<MidiEventData> midiDataList = new ArrayList<MidiEventData>();
+		
+		
 		
 		return midiDataList;
 	}
