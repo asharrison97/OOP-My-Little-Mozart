@@ -9,7 +9,7 @@ public class MidiEventData {
 		this.note = note ;
 		this.channel = channel;
 		this.instrument = instrument;
-		this.noteOnOff = noteOnOff ;
+		this.noteOnOff = noteOnOff;
 	}
 	
 	public int getStartEndTick() {

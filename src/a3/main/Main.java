@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import a3.midieventdata.*;
 import a3.midicsvparser.*;
 import a3.midieventfactory.*;
+import a3.midieventfactoryabstract.*;
 import a3.standardmidieventfactory.*;
 import a3.legatomidieventfactory.*;
 import a3.staccatomidieventfactory.*;
@@ -14,10 +15,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		try {
-			List<MidiEventData> midiEvents = MidiCsvParser.parseCsv("./files/mystery_song.csv");
+			List<MidiEventData> midiEvents = MidiCsvParser.parseCsv("mystery_song.csv");
+			
 			Sequence sequence = new Sequence(Sequence.PPQ, 384);
 			Track track = sequence.createTrack();
-			
+					
 			MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract();
 			// Other factory abstracts?
 			
@@ -54,6 +56,7 @@ public class Main {
 			}
 			Thread.sleep(500);
 			sequencer.close();
+
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
