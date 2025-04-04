@@ -10,6 +10,8 @@ import a3.standardmidieventfactory.*;
 import a3.legatomidieventfactory.*;
 import a3.staccatomidieventfactory.*;
 import a3.instrumentstrategy.*;
+import a3.pitchstrategy.*;
+import a3.standardmidieventfactory.*;
 import javax.sound.midi.*;
 
 public class Main {
