@@ -1,7 +1,6 @@
 package a3.main;
 
 import java.util.List;
-import java.util.ArrayList;
 import a3.midieventdata.*;
 import a3.midicsvparser.*;
 import a3.instrumentstrategy.*;
