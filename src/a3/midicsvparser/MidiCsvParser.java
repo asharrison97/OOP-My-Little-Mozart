@@ -40,7 +40,7 @@ public class MidiCsvParser {
 				onOff = 0;
 			}
 			
-			MidiEventData newData = new MidiEventData(Integer.parseInt(v.get(0)), Integer.parseInt(v.get(2)), Integer.parseInt(v.get(3)), Integer.parseInt(v.get(4)), Integer.parseInt(v.get(5)), onOff);
+			MidiEventData newData = new MidiEventData(Integer.parseInt(v.get(0)), Integer.parseInt(v.get(4)), Integer.parseInt(v.get(3)), Integer.parseInt(v.get(2)), Integer.parseInt(v.get(5)), onOff);
 			midiDataList.add(newData);
 		}
 

@@ -1,5 +1,7 @@
 package a3.midieventdata;
 
+import javax.sound.midi.ShortMessage;
+
 public class MidiEventData {
 	private int startEndTick, velocity, note, channel, noteOnOff;
 	private int instrument;
@@ -45,7 +47,11 @@ public class MidiEventData {
 	}
 	
 	public int getNoteOnOff() {
-		return noteOnOff;
+		if (noteOnOff == 0) {
+			return ShortMessage.NOTE_OFF;
+		}
+		
+		else {return ShortMessage.NOTE_ON;}
 	}
 	
 	public void setNoteOnOff(int noteOnOff) {
