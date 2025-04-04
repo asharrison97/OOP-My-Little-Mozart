@@ -1,4 +1,4 @@
-package a3.midieventfactory;
+package a3.midifactory;
 
 import javax.sound.midi.*;
 

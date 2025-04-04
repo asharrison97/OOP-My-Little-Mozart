@@ -4,14 +4,9 @@ import java.util.List;
 import java.util.ArrayList;
 import a3.midieventdata.*;
 import a3.midicsvparser.*;
-import a3.midieventfactory.*;
-import a3.midieventfactoryabstract.*;
-import a3.standardmidieventfactory.*;
-import a3.legatomidieventfactory.*;
-import a3.staccatomidieventfactory.*;
 import a3.instrumentstrategy.*;
 import a3.pitchstrategy.*;
-import a3.standardmidieventfactory.*;
+import a3.midifactory.*;
 import javax.sound.midi.*;
 
 public class Main {

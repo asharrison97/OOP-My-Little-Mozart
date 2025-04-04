@@ -1,22 +1,14 @@
-package a3.standardmidieventfactory;
+package a3.midifactory;
 
-import a3.midieventfactoryabstract.*;
-import javax.sound.midi.*;
-
-import a3.midieventfactory.MidiEventFactory;
+import javax.sound.midi.InvalidMidiDataException;
+import javax.sound.midi.MidiEvent;
 
 public class StandardMidiEventFactory implements MidiEventFactory {
-
-	@Override
 	public MidiEvent createNoteOn(int tick, int note, int velocity, int channel) throws InvalidMidiDataException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public MidiEvent createNoteOff(int tick, int note, int channel) throws InvalidMidiDataException {
-		// TODO Auto-generated method stub
-		return null;
+		
 	}
 	
+	public MidiEvent createNoteOff(int tick, int note, int channel) throws InvalidMidiDataException {
+		
+	}
 }
