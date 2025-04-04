@@ -1,5 +1,6 @@
 package a3.standardmidieventfactory;
 
+import a3.midieventfactoryabstract.*;
 import javax.sound.midi.*;
 
 import a3.midieventfactory.MidiEventFactory;
