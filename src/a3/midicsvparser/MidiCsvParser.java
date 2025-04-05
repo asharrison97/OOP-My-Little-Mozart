@@ -5,7 +5,22 @@ import java.util.ArrayList;
 import java.io.*;
 import a3.midieventdata.*;
 
+/**
+ * MidiCsvParser - This class will contain methods designed to parse
+ * through a .csv file, extract the data, put it in the appropriate format, and 
+ * return it as a midiDataList object.
+ */
 public class MidiCsvParser {
+	/**
+	 * public static List<MidiEventData> parseCsv() - This 
+	 * method will take a string as a parameter and read the file
+	 * at the location determined within the string. It will parse
+	 * through the data in the file, extracting what it needs into 
+	 * appropriate variables before adding it all to one object and 
+	 * returning it.
+	 * @param f - String that should contain the path to the file you wish to read
+	 * @return
+	 */
 	public static List<MidiEventData> parseCsv(String f) {
 		//System.out.println(new File(".").getAbsolutePath());
 		List<String> csvRawLines = new ArrayList<String>();
