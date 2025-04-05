@@ -8,6 +8,8 @@ import a3.pitchstrategy.*;
 import a3.midifactory.*;
 import javax.sound.midi.*;
 
+// SONG NAME: BILLIE ELLISH - BAD GUY
+// GITHUB LINK: https://github.com/asharrison97/OOP-My-Little-Mozart
 public class Main {
 
 	public static void main(String[] args) {
