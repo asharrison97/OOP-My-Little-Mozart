@@ -2,7 +2,16 @@ package a3.instrumentstrategy;
 
 import javax.sound.midi.*;
 
+/**
+ * public class AcousticGrandPianoStrategy - Implements InstrumentStrategy interface,
+ * this class contains a method that changes the instrument within the track.
+ */
 public class AcousticGrandPianoStrategy implements InstrumentStrategy {
+	/**
+	 * public void applyInstrument()
+	 * @param track - track you wish to modify
+	 * @param channel - channel data
+	 */
 	public void applyInstrument(Track track, int channel) {
 		/*Receiver receiver = track;
 		try {
