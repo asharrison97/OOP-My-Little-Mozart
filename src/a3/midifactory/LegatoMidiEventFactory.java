@@ -20,9 +20,9 @@ public class LegatoMidiEventFactory implements MidiEventFactory {
 	 * @return
 	 */
 	public MidiEvent createNoteOn(int tick, int note, int velocity, int channel) throws InvalidMidiDataException {
-		note = note+80;
+	
 		ShortMessage sm = new ShortMessage(ShortMessage.NOTE_ON, channel, note, velocity);
-		MidiEvent midiEvent = new MidiEvent(sm, tick-120);
+		MidiEvent midiEvent = new MidiEvent(sm, tick);
 		
 		return midiEvent;
 	}	
@@ -37,7 +37,7 @@ public class LegatoMidiEventFactory implements MidiEventFactory {
 	 * @return
 	 */
 	public MidiEvent createNoteOff(int tick, int note, int channel) throws InvalidMidiDataException {
-		note = note+80;
+
 		ShortMessage sm = new ShortMessage(ShortMessage.NOTE_OFF, channel, note);
 		MidiEvent midiEvent = new MidiEvent(sm, tick-120);
 		
